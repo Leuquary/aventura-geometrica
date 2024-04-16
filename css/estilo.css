@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.item{
+    margin: 0 auto;
+}
+.header{
+    padding: 40px;
+    margin-bottom: 30px;
+    background-color: rgb(156, 116, 230);
+    color: white;
+}
+.forma-geometrica{
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    border: 1px solid gray;
+    padding: 40px;
+    box-shadow: 2px 2px 12px rgba(158, 158, 158, 0.685);
+}
+.text p{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.item a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
