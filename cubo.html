@@ -20,17 +20,30 @@
             <div class="row">
                 <div class="col-sm-5 item">
                     <div class="forma-geometrica">
-                        <img src="./img/cubo.png">
+                        <img src="./img/cubo.png" alt="Cubo">
                         <div class="text">
                             <h3>Cubo</h3>
                             <p>Um cubo é uma forma geométrica 3D com seis faces quadradas de tamanho igual e todos os ângulos internos iguais a 90 graus.</p>
                             <h3>Calcular área</h3>
+                            <p>Para calcular a área de um cubo, é preciso calcular a área total de todas as suas faces. Como um cubo tem seis faces que são todas iguais, é possível calcular a área de uma delas e multiplicar por 6.</p>
+                            <p>A fórmula para a área de uma face de um cubo é:</p>
+                            <p>Área da face = L²</p>
+                            <p>Onde <i>L</i> é o comprimento de um dos lados do cubo. Portanto, a área total de um cubo é:</p>
+                            <p>Área total = 6 x Área da face = 6L²</p>
+                            <p>Então, para calcular a área de um cubo, você só precisa saber o comprimento de um dos lados.</p>
+                            <img src="./img/cubo2.png" alt="Cubo">
+                            <p>Por exemplo, se o comprimento do lado de uma das faces do cubo é 5 metros, então a área do cubo é:</p>
+                            <p>
+                                Área do cubo = 6 x (5²)
+                                <br>
+                                Área do cubo = 6 x 25 = 150 metros
+                            </p>
                             <form class="form">
-                                <label for="lado">Lado:</label>
-                                <input type="number" placeholder="Digite o lado do quadrado" class="form-control" id="lado">
-                                <button type="button" onclick="calcular_area_quadrado()" class="btn btn-success">Calcular</button>
+                                <label for="lado_face">Lado da face:</label>
+                                <input type="number" placeholder="Digite o lado da face do cubo" class="form-control" id="lado_face">
+                                <button type="button" onclick="calcular_area_cubo()" class="btn btn-success">Calcular</button>
                             </form>
-                            <p id="resultado_quadrado">Resultado: </p>
+                            <p id="resultado_cubo">Resultado: </p>
                         </div>
                     </div>
                 </div>

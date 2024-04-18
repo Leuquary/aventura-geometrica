@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexágono</title>
+    <link rel="stylesheet" href="css/forma.css">
+    <script src="js/calculo.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-container">
+        <header class="header">
+            <h1 class="text-center">Hexágono</h1>
+         </header>
+
+         <main class="container">
+            <div class="row">
+                <div class="col-sm-5 item">
+                    <div class="forma-geometrica">
+                        <img src="./img/hexagono.png" alt="Hexágono">
+                        <div class="text">
+                            <h3>Hexágono</h3>
+                            <p>A forma geométrica 2D conhecida como hexágono regular é um polígono de seis lados onde todos os lados e todos os ângulos têm medidas iguais.</p>
+                            <p>Hexágono = 6 lados</p>
+                            <h3>Calcular área</h3>
+                            <p>Para calcular a área de um hexágono regular, é necessário conhecer o apótema, que é a distância do centro do hexágono até o meio de qualquer um dos lados, e o valor de um dos lados:</p>
+                            <img src="./img/hexagono2.png" alt="Hexágono">
+                            <p>Neste caso <i>b</i> representa o lado do hexágono e <i>a</i> o apótema.</p>
+                            <p>Multiplicando-se o valor do apótema e do comprimento de um dos lados do hexágono e dividindo por 2, obtem-se a área de um dos 6 triângulos equiláteros que formam o hexágono.</p>
+                            <p>Como o hexágono é formado por 6 triângulos, basta multiplicar a área deles por esse valor.</p>
+                            <p>Por exemplo, se o comprimento de um dos lados é igual a 5 metros e o apótema é igual a 3 metros, a área do hexágono é:</p>
+                            <p>
+                                Área do hexágono = 6 x (5 x 3) / 2
+                                <br>
+                                Área do hexágono = 90 / 2
+                                <br>
+                                Área do hexágono = 45 metros
+                            </p>
+                            <form class="form">
+                                <label for="lado_hexagono">Lado:</label>
+                                <input type="number" placeholder="Digite o lado do hexágono" class="form-control" id="lado_hexagono">
+                                <label for="apotema_hexagono">Apótema:</label>
+                                <input type="number" placeholder="Digite o apótema do hexágono" class="form-control" id="apotema_hexagono">
+                                <button type="button" onclick="calcular_area_hexagono()" class="btn btn-success">Calcular</button>
+                            </form>
+                            <p id="resultado_hexagono">Resultado: </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </main>
+    </div>
+</body>
+</html>

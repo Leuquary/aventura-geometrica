@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heptágono</title>
+    <link rel="stylesheet" href="css/forma.css">
+    <script src="js/calculo.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main-container">
+        <header class="header">
+            <h1 class="text-center">Heptágono</h1>
+         </header>
+
+         <main class="container">
+            <div class="row">
+                <div class="col-sm-5 item">
+                    <div class="forma-geometrica">
+                        <img src="./img/heptagono.png" alt="Heptágono">
+                        <div class="text">
+                            <h3>Heptágono</h3>
+                            <p>A forma geométrica 2D conhecida como heptágono regular é um polígono de sete lados onde todos os lados e todos os ângulos têm medidas iguais.</p>
+                            <p>Heptágono = 7 lados</p>
+                            <h3>Calcular área</h3>
+                            <p>Para calcular a área de um heptágono, é necessário conhecer o apótema, que é a distância do centro do heptágono até o meio de qualquer um dos lados, e o valor de um dos lados. Pode-se utilizar a seguinte fórmula:</p>
+                            <img src="./img/heptagono2.webp" alt="Heptágono">
+                            <p>Área do heptágono = 7 x (<i>b</i> x <i>a</i>) / 2</p>
+                            <p>Em que <i>b</i> representa o comprimento de um dos lados, e <i>a</i> representa o apótema.</p>
+                            <p>Multiplicando-se o valor do apótema e do comprimento de um dos lados do heptágono e dividindo por 2, obtem-se a área de um dos 7 triângulos equiláteros que formam o heptágono.</p>
+                            <p>Como o heptágono é formado por 7 triângulos, basta multiplicar a área deles por esse valor.</p>
+                            <p>Por exemplo, se o comprimento de um dos lados é igual a 6 metros e o apótema é igual a 4 metros, a área do heptágono é:</p>
+                            <p>
+                                Área do heptágono = 7 x (6 x 4) / 2
+                                <br>
+                                Área do heptágono = 168 / 2
+                                <br>
+                                Área do heptágono = 84 metros
+                            </p>
+                            <form class="form">
+                                <label for="lado_heptagono">Lado:</label>
+                                <input type="number" placeholder="Digite o lado do heptágono" class="form-control" id="lado_heptagono">
+                                <label for="apotema_heptagono">Apótema:</label>
+                                <input type="number" placeholder="Digite o apótema do heptágono" class="form-control" id="apotema_heptagono">
+                                <button type="button" onclick="calcular_area_heptagono()" class="btn btn-success">Calcular</button>
+                            </form>
+                            <p id="resultado_heptagono">Resultado: </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </main>
+    </div>
+</body>
+</html>

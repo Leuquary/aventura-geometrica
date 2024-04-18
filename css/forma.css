@@ -27,10 +27,12 @@
 .forma-geometrica{
     display: flex;
     flex-direction: column;
-    border-radius: 25px;
+    gap: 40px;
     padding: 40px;
-    box-shadow: 2px 2px 15px rgba(158, 158, 158, 0.719);
-    /* border: 1px solid rgb(180, 180, 180); */
+    border-radius: 20px;
+    border: 1px solid rgb(179, 179, 179);
+    padding: 40px;
+    box-shadow: 2px 2px 20px rgb(221, 221, 221);
 }
 .form{
     display: flex;
