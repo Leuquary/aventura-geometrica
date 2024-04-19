@@ -32,6 +32,16 @@ const lado_hexagono = document.getElementById("lado_hexagono");
 const apotema_heptagono = document.getElementById("apotema_heptagono");
 const lado_heptagono = document.getElementById("lado_heptagono");
 
+//trapezio
+const base_maior = document.getElementById("base_maior");
+const base_menor = document.getElementById("base_menor");
+const altura_trapezio = document.getElementById("altura_trapezio");
+
+//romboedro
+const diagonal_maior = document.getElementById("diagonal_maior");
+const diagonal_menor = document.getElementById("diagonal_menor");
+
+
 function calcular_area_circulo(){
     var resultado = (raio.value*raio.value)*Math.PI;
     var saida = document.getElementById("resultado_circulo");
@@ -83,5 +93,25 @@ function calcular_area_hexagono(){
 function calcular_area_heptagono(){
     var resultado = ((7 * lado_heptagono.value) * apotema_heptagono.value)/2;
     var saida = document.getElementById("resultado_heptagono");
+    saida.append(resultado);
+}
+
+function calcular_area_trapezio(){
+    var num1 = converter_valor(base_maior.value);
+    var num2 = converter_valor(base_menor.value);
+    var num3 = converter_valor(altura_trapezio.value);
+    var resultado = ((num1+num2)*num3)/2;
+    var saida = document.getElementById("resultado_trapezio");
+    saida.append(resultado);
+}
+
+function converter_valor(valor){
+    var valor_convertido = parseFloat(valor);
+    return valor_convertido;
+}
+
+function calcular_area_romboedro(){
+    var resultado = 6*((diagonal_maior.value*diagonal_menor.value)/2);
+    var saida = document.getElementById("resultado_romboedro");
     saida.append(resultado);
 }
